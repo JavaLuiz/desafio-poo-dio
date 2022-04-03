@@ -1,9 +1,9 @@
 package br.com.dio.desafio.dominio;
 
 public class Curso extends Conteudo{
-
+// curso é classe filha de conteudo
     private int cargaHoraria;
-
+// clsse filha utilizando implementação da classe pai
     @Override
     public double calcularXp() {
         return XP_PADRAO * cargaHoraria;

@@ -4,8 +4,12 @@ import java.util.*;
 
 public class Dev {
     private String nome;
+    // exemplo de polimorfismo
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+
+    //LinkedHashSet nos garente que na terao repetiçoes nos módulos do bootcamp
+    //
 
     public void inscreverBootcamp(Bootcamp bootcamp){
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
